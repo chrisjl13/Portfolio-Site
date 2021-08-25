@@ -1,0 +1,187 @@
+html {
+    font-size: 17px;
+    font-family: Cairo, sans-serif;
+    font-weight: 400;
+    background-color: rgba(25, 25, 25, 0.979);
+    color: white;
+    text-align: center; 
+}
+/*Container Grid*/
+#gridContainer {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85px 1fr 1.4fr 1fr 0.9fr 10px;
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 1500px;
+    grid-template-areas: 
+        "head head"
+        "about about"
+        "project project"
+        "skill goal"
+        "contactInfo contactInfo"
+        "ft ft";
+}   
+
+
+/* Headers & Nav Section */
+header {
+    grid-area: head;
+    justify-self: center;
+    align-self: center;
+    border-bottom: 2px solid white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+#headFlex {
+    display: flex;
+}
+#headFlex a {
+    color: white;
+}
+#headFlex a:hover {
+    color: orange;
+}
+#headFlex img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 3rem;
+}
+header h1 {
+    font-family: Staatliches, cursive;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+nav {
+    display: inline-flex;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 50px;
+    justify-self: center;
+    align-self: center;
+}
+nav ul li {
+    padding: 0 25px;
+    font-family: Staatliches, cursive;
+    font-size: 1.3rem;
+}
+h2 {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 2rem;
+}
+
+/* About Me Section */
+.aboutMe {
+    grid-area: about;
+    border-bottom: 2px solid white;
+    justify-self: center;
+    align-self: center;
+}
+.aboutMe p {
+    padding-bottom: 2rem;
+}
+
+
+/* Projects Section */
+.projects {
+    grid-area: project;
+    border-bottom: 2px solid white;
+}
+#projectDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects h2{
+    text-align: center;
+}
+.projects ul {
+    margin-top: 0;
+    text-align: justify;
+}
+.projects p {
+    font-size: 1.2rem;
+}
+
+
+/* Skills Section */
+.currentSkills {
+    grid-area: skill;
+    border-bottom: 2px solid white;
+    border-right: 2px white solid;
+}
+#skillDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.currentSkills ul {
+    margin-top: 0;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+.currentSkills p {
+    font-size: 1.2rem;
+}
+
+/* Goals Section */
+.goals {
+    grid-area: goal;
+    border-bottom: 2px solid white;
+}
+#goalDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goals ul {
+    margin-top: 0;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+.goals p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact {
+    grid-area: contactInfo;
+    border-bottom: 2px solid white;
+    background-color: black;
+}
+#contactDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactDetails ul {
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+#env {
+    height: 3rem;
+    width: 3rem;
+}
+#tel {
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+}
+
+
+/* footer Section */
+footer {
+    grid-area: ft;
+    text-align: justify;
+}
+footer p {
+    margin-left: 3rem;
+}
